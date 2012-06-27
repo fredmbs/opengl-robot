@@ -22,6 +22,7 @@ public:
 	RobotHand(const RobotDimensions&);
 	virtual ~RobotHand();
 	virtual void draw();
+	virtual void setRotation(double);
 };
 
 #endif /* ROBOTHAND_H_ */

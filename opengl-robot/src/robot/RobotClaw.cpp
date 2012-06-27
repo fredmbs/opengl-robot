@@ -20,10 +20,14 @@ RobotClaw::~RobotClaw() {
 
 void RobotClaw::setAngle(double a) {
 	propAngle = a;
+	if (propAngle < 0)
+		propAngle = 0;
+	else if (propAngle > 90)
+		propAngle = 90;
 }
 
 void RobotClaw::rotateAngle(double a) {
-	propAngle += a;
+	setAngle(propAngle + a);
 }
 
 void RobotClaw::setAttack(double a) {
@@ -40,6 +44,18 @@ void RobotClaw::setHandColor(const Color& c) {
 
 void RobotClaw::setFingerColor(const Color& c) {
 	finger.setColor(c);
+}
+
+void RobotClaw::setRotation(double a) {
+	RobotPart::setRotation(a);
+	if (angle < 0)
+		angle += 360;
+	if (angle < 280 && angle > 80) {
+		if (angle > 180)
+			angle = 280;
+		else
+			angle = 80;
+	}
 }
 
 void RobotClaw::draw() {

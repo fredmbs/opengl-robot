@@ -20,7 +20,7 @@ RobotPart::~RobotPart() {
 }
 
 void RobotPart::rotate(double a) {
-	angle = fmod(angle + a, 360.0);
+	setRotation(angle + a);
 }
 
 void RobotPart::setRotation(double a) {

@@ -18,7 +18,7 @@ RobotDimensions::RobotDimensions(double _armWidth, double _armHeight, double _ar
 	ringRadius = armHeight/2;
 	ringInnerRadius =  ringRadius / 2;
 	ringCenterZ = ringHeight/2;
-	baseWidth = 4 * armDeep;
+	baseWidth = (4 * armDeep);
 	baseHeight = armWidth;
 	baseDeep = 2 * armDeep;
 	baseCenterX = baseWidth / 2;

@@ -6,6 +6,7 @@
  */
 
 #include "RobotHand.h"
+#include <iostream>
 
 RobotHand::RobotHand(const RobotDimensions& rdim)
 	: RobotPart(rdim),
@@ -37,4 +38,12 @@ void RobotHand::draw() {
 	ringFinger.draw();
 	glTranslated(0, 0, -2*rd.ringFingerHeight);
 	ringFinger.draw();
+}
+
+void RobotHand::setRotation(double a) {
+	RobotPart::setRotation(a);
+	if (angle > 90)
+		angle = 90;
+	else if (angle < 0)
+		angle = 0;
 }

@@ -30,3 +30,11 @@ void RobotArm::draw() {
 	glTranslated(rd.armWidth + rd.ringRadius, rd.ringRadius, rd.ringHeight);
 	ring.draw();
 }
+
+void RobotArm::setRotation(double a) {
+	RobotPart::setRotation(a);
+	if (angle > 180)
+		angle = 180;
+	else if (angle < 0)
+		angle = 0;
+}

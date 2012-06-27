@@ -25,6 +25,7 @@ public:
 	RobotClaw(const RobotDimensions&);
 	virtual ~RobotClaw();
 	virtual void draw();
+	virtual void setRotation(double);
 	void setHandColor(const Color&);
 	void setFingerColor(const Color&);
 	void setAngle(double);

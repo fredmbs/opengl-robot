@@ -19,8 +19,8 @@ protected:
 public:
 	RobotPart(const RobotDimensions&);
 	virtual ~RobotPart();
-	virtual void rotate(double);
-	void setRotation(double);
+	void rotate(double);
+	virtual void setRotation(double);
 	inline double getRotation() { return angle; };
 };
 
