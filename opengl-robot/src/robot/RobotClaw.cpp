@@ -50,11 +50,11 @@ void RobotClaw::setRotation(double a) {
 	RobotPart::setRotation(a);
 	if (angle < 0)
 		angle += 360;
-	if (angle < 280 && angle > 80) {
+	if (angle < 283 && angle > 77) {
 		if (angle > 180)
-			angle = 280;
+			angle = 283;
 		else
-			angle = 80;
+			angle = 77;
 	}
 }
 
