@@ -41,7 +41,7 @@
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1081162" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug.2127781397" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug"/>
-							<tool commandLinePattern="${COMMAND} -static-libgcc  ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}  -Wl,--subsystem,windows" id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug.676091617" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug">
+							<tool commandLinePattern="${COMMAND} -static-libgcc -static-libstdc++ ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}  -Wl,--subsystem,windows" id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug.676091617" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug">
 								<option id="gnu.cpp.link.option.libs.922938770" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="freeglut_static"/>
 									<listOptionValue builtIn="false" value="opengl32"/>
